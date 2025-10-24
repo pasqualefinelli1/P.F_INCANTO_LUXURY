@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P.F. Incanto Luxury - I Nostri Profili</title>
+    <title>F.P. Incanto Luxury - I Nostri Profili</title>
+    <link rel="icon" href="imaggini/logo.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta name="description" content="Scopri i profili ufficiali di F.P. Incanto Luxury su Instagram, TikTok e Vinted. Moda, eleganza e lusso accessibile.">
+    <meta name="keywords" content="F.P. Incanto, luxury, moda, Vinted, Instagram, TikTok, vintage, lusso, eleganza">
+
     <style>
-        body {
-            box-sizing: border-box;
-        }
+        body { box-sizing: border-box; scroll-behavior: smooth; }
 
         .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4A90E2 0%, #2C3E50 100%);
         }
 
         .card-hover {
@@ -24,11 +27,11 @@
         }
 
         .vinted-gradient {
-            background: linear-gradient(135deg, #09B1BA 0%, #00A8B5 100%);
+            background: linear-gradient(135deg, #00BFA6 0%, #00A896 100%);
         }
 
         .instagram-gradient {
-            background: linear-gradient(135deg, #E4405F 0%, #C13584 50%, #833AB4 100%);
+            background: linear-gradient(135deg, #F58529 0%, #DD2A7B 50%, #8134AF 100%);
         }
 
         .pulse-animation {
@@ -41,121 +44,143 @@
         }
     </style>
 </head>
-<body class="gradient-bg min-h-full">
-    <div class="min-h-full py-12 px-4">
-        <div class="max-w-4xl mx-auto">
-            <!-- Header -->
-            <div class="text-center mb-12">
-                <!-- Logo Placeholder -->
-                <div class="w-32 h-32 mx-auto mb-6 bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/30">
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-white mb-1">PF</div>
-                        <div class="text-xs text-white/80">LUXURY</div>
-                    </div>
-                </div>
+<body class="gradient-bg min-h-full text-white">
 
-                <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
-                    P.F. Incanto Luxury
-                </h1>
-                <p class="text-lg text-white/90 mb-8">
-                    Scopri i nostri profili per shopping di lusso e stile
-                </p>
-                <div class="w-24 h-1 bg-white/50 mx-auto rounded-full"></div>
-            </div>
+<!-- 🔹 Navbar -->
+<nav class="fixed top-0 left-0 w-full bg-white/10 backdrop-blur-md z-50">
+  <div class="max-w-5xl mx-auto flex items-center justify-between px-6 py-3">
+    <h1 class="text-white font-semibold text-lg tracking-wide">F.P. Incanto</h1>
+    <div class="space-x-6 text-white/80 text-sm">
+      <a href="#profili" class="hover:text-white">Profili</a>
+      <a href="#chi-siamo" class="hover:text-white">Chi Siamo</a>
+      <a href="#galleria" class="hover:text-white">Galleria</a>
+    </div>
+  </div>
+</nav>
 
-            <!-- Cards Container -->
-            <div class="grid md:grid-cols-3 gap-6 mb-8">
-                <!-- Instagram Card -->
-                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
-                    <div class="text-center">
-                        <div class="instagram-gradient w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="..."/>
-                            </svg>
-                        </div>
-                        <h2 class="text-xl font-bold text-gray-800 mb-3">Instagram</h2>
-                        <p class="text-gray-600 mb-3">@p_f_incanto_luxury</p>
-                        <p class="text-xs text-gray-500 mb-4">Segui per le ultime novità</p>
-                        <a href="https://www.instagram.com/p_f_incanto_luxury?igsh=YTRkODJlZjM0OTRt&utm_source=qr" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           class="instagram-gradient text-white px-6 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-all duration-300 inline-block">
-                            Visita Instagram
-                        </a>
-                    </div>
-                </div>
+<!-- Spazio per navbar -->
+<div class="pt-20"></div>
 
-                <!-- TikTok Card -->
-                <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
-                    <div class="text-center">
-                        <div class="bg-black w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="..."/>
-                            </svg>
-                        </div>
-                        <h2 class="text-xl font-bold text-gray-800 mb-3">TikTok</h2>
-                        <p class="text-gray-600 mb-3">@effeluxury2</p>
-                        <p class="text-xs text-gray-500 mb-4">Video e contenuti esclusivi</p>
-                        <a href="https://www.tiktok.com/@effeluxury2?_t=ZN-90PldzDsqxy&_r=1" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           class="bg-black text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-gray-800 transition-all duration-300 inline-block">
-                            Visita TikTok
-                        </a>
-                    </div>
-                </div>
+<!-- 🔹 Header -->
+<div class="text-center mb-12">
+    <div class="w-40 h-40 mx-auto mb-6 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/30 overflow-hidden">
+        <img src="imaggini/logo.jpg" alt="Logo F.P. Incanto" class="object-contain w-full h-full">
+    </div>
+    <h1 class="text-4xl md:text-5xl font-serif text-white tracking-wide">
+        F.P. Incanto
+    </h1>
+    <div class="w-24 h-1 bg-white/40 mx-auto mt-6 rounded-full"></div>
+</div>
 
-                <!-- Vinted Cards -->
-                <div class="space-y-4">
-                    <div class="bg-white rounded-2xl p-4 shadow-xl card-hover">
-                        <div class="text-center">
-                            <div class="vinted-gradient w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center">
-                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="..."/>
-                                </svg>
-                            </div>
-                            <h3 class="text-sm font-bold text-gray-800 mb-1">Vinted - fatypaky13</h3>
-                            <p class="text-xs text-gray-500 mb-3">Profilo principale</p>
-                            <a href="https://www.vinted.it/member/278612511-fatypaky13" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               class="vinted-gradient text-white px-4 py-1.5 rounded-lg text-xs font-semibold hover:opacity-90 transition-all duration-300 inline-block">
-                                Vai al Profilo
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-2xl p-4 shadow-xl card-hover">
-                        <div class="text-center">
-                            <div class="vinted-gradient w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center">
-                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="..."/>
-                                </svg>
-                            </div>
-                            <h3 class="text-sm font-bold text-gray-800 mb-1">Vinted - pf146</h3>
-                            <p class="text-xs text-gray-500 mb-3">Profilo secondario</p>
-                            <a href="https://www.vinted.it/member/180808622-pf146" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               class="vinted-gradient text-white px-4 py-1.5 rounded-lg text-xs font-semibold hover:opacity-90 transition-all duration-300 inline-block">
-                                Vai al Profilo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer -->
+<!-- 🔹 Profili -->
+<section id="profili" class="max-w-4xl mx-auto px-4 mb-16">
+    <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <!-- Instagram -->
+        <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
             <div class="text-center">
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
-                    <h3 class="text-xl font-semibold text-white mb-3">🛍️ Shopping di Qualità</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">
-                        Trova articoli di lusso e di qualità sui nostri profili Vinted. 
-                        Seguici su Instagram per rimanere aggiornato sulle ultime novità!
-                    </p>
+                <div class="instagram-gradient w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="w-8 h-8 invert brightness-0" alt="Instagram Logo">
+                </div>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">Instagram</h2>
+                <p class="text-gray-600 mb-3">@p_f_incanto_luxury</p>
+                <p class="text-xs text-gray-500 mb-4">Segui per le ultime novità</p>
+                <a href="https://www.instagram.com/p_f_incanto_luxury"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="instagram-gradient text-white px-6 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-all duration-300 inline-block">
+                    Visita Instagram
+                </a>
+            </div>
+        </div>
+
+        <!-- TikTok -->
+        <div class="bg-white rounded-2xl p-6 shadow-xl card-hover">
+            <div class="text-center">
+                <div class="bg-black w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" class="w-8 h-8 invert" alt="TikTok Logo">
+                </div>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">TikTok</h2>
+                <p class="text-gray-600 mb-3">@effeluxury2</p>
+                <p class="text-xs text-gray-500 mb-4">Video e contenuti esclusivi</p>
+                <a href="https://www.tiktok.com/@effeluxury2"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="bg-black text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-gray-800 transition-all duration-300 inline-block">
+                    Visita TikTok
+                </a>
+            </div>
+        </div>
+
+        <!-- Vinted -->
+        <div class="space-y-4">
+            <div class="bg-white rounded-2xl p-4 shadow-xl card-hover">
+                <div class="text-center">
+                    <div class="vinted-gradient w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/vinted.svg" class="w-6 h-6 invert brightness-0" alt="Vinted Logo">
+                    </div>
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Vinted - fatypaky13</h3>
+                    <p class="text-xs text-gray-500 mb-3">Profilo principale</p>
+                    <a href="https://www.vinted.it/member/278612511-fatypaky13"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="vinted-gradient text-white px-4 py-1.5 rounded-lg text-xs font-semibold hover:opacity-90 transition-all duration-300 inline-block">
+                        Vai al Profilo
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-4 shadow-xl card-hover">
+                <div class="text-center">
+                    <div class="vinted-gradient w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/vinted.svg" class="w-6 h-6 invert brightness-0" alt="Vinted Logo">
+                    </div>
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Vinted - pf146</h3>
+                    <p class="text-xs text-gray-500 mb-3">Profilo secondario</p>
+                    <a href="https://www.vinted.it/member/180808622-pf146"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="vinted-gradient text-white px-4 py-1.5 rounded-lg text-xs font-semibold hover:opacity-90 transition-all duration-300 inline-block">
+                        Vai al Profilo
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+        <h3 class="text-xl font-semibold text-white mb-3">🛍️ Shopping di Qualità</h3>
+        <p class="text-white/80 text-sm leading-relaxed">
+            Trova articoli di lusso e di qualità sui nostri profili Vinted. 
+            Seguici su Instagram per rimanere aggiornato sulle ultime novità!
+        </p>
+    </div>
+</section>
+
+<!-- 🔹 Chi siamo -->
+<section id="chi-siamo" class="py-16 text-center px-6 bg-white/10 backdrop-blur-sm">
+  <h2 class="text-3xl font-serif mb-4">Chi Siamo</h2>
+  <p class="max-w-2xl mx-auto text-white/80 leading-relaxed">
+    F.P. Incanto nasce dalla passione per la moda e per il lusso accessibile.  
+    Selezioniamo con cura articoli unici, eleganti e di qualità per offrire ai nostri clienti 
+    un’esperienza d’acquisto raffinata e autentica.  
+    Ogni pezzo racconta una storia di stile, attenzione e bellezza.
+  </p>
+</section>
+
+<!-- 🔹 Galleria -->
+<section id="galleria" class="py-16">
+  <h2 class="text-center text-3xl font-serif mb-8">Le Nostre Proposte</h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto px-4">
+    <img src="imaggini/gucci flora.jpg" class="rounded-xl shadow-lg hover:opacity-90 transition" alt="Prodotto 1">
+    <img src="imaggini/bianco latte.jpg" class="rounded-xl shadow-lg hover:opacity-90 transition" alt="Prodotto 2">
+    <img src="imaggini/dior.jpg" class="rounded-xl shadow-lg hover:opacity-90 transition" alt="Prodotto 3">
+  </div>
+</section>
+
+<!-- 🔹 Footer -->
+<footer class="text-center text-white/60 text-sm mt-12 pb-6">
+  © 2025 F.P. Incanto Luxury — Tutti i diritti riservati
+</footer>
+
 </body>
 </html>
