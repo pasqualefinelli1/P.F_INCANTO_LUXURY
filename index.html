@@ -19,23 +19,12 @@
     }
 
     /* Oro e beige */
-    .gold {
-      color: #C5A253;
-    }
-
-    .gold-bg {
-      background-color: #C5A253;
-    }
-
-    .beige-bg {
-      background-color: #E5D1A4;
-    }
+    .gold { color: #C5A253; }
+    .gold-bg { background-color: #C5A253; }
+    .beige-bg { background-color: #E5D1A4; }
 
     /* Effetto hover card */
-    .card-hover {
-      transition: all 0.3s ease;
-    }
-
+    .card-hover { transition: all 0.3s ease; }
     .card-hover:hover {
       transform: translateY(-6px);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
@@ -75,6 +64,30 @@
     .image-card:hover .image-overlay {
       opacity: 1;
     }
+
+    /* Bottone Torna su */
+    #toTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #C5A253;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 12px 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: all 0.3s;
+      z-index: 100;
+    }
+    #toTopBtn:hover { transform: scale(1.1); }
+
+    /* Stelle recensioni */
+    .stars {
+      color: #C5A253;
+      font-size: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -87,19 +100,20 @@
       <a href="#profili" class="hover:text-[#C5A253]">Profili</a>
       <a href="#chi-siamo" class="hover:text-[#C5A253]">Chi Siamo</a>
       <a href="#galleria" class="hover:text-[#C5A253]">Galleria</a>
+      <a href="#recensioni" class="hover:text-[#C5A253]">Recensioni</a>
+      <a href="#contatti" class="hover:text-[#C5A253]">Contatti</a>
     </div>
   </div>
 </nav>
 
-<!-- Spazio Navbar -->
 <div class="pt-20"></div>
 
 <!-- 🔹 Copertina -->
 <header class="hero h-[70vh] flex flex-col justify-center items-center text-center">
   <img src="imaggini/logo.jpg" alt="Logo F.P. Incanto" class="w-32 h-32 rounded-full mb-6 border-4 border-[#C5A253] shadow-lg bg-white/30">
   <h1 class="text-5xl font-serif tracking-wide mb-4">F.P. Incanto Luxury</h1>
-  <p class="text-lg text-white/90 mb-6">Eleganza. Stile. Lusso accessibile.</p>
-  <a href="#profili" class="gold-bg text-white px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 transition-all">
+  <h2 id="typed-text" class="text-lg text-white/90 h-6"></h2>
+  <a href="#profili" class="gold-bg text-white px-6 py-3 rounded-lg text-sm font-semibold hover:opacity-90 mt-8 transition-all">
     Scopri i nostri profili
   </a>
 </header>
@@ -111,7 +125,9 @@
   <div class="grid md:grid-cols-3 gap-6 mb-12">
     <!-- Instagram -->
     <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="w-8 h-8 mx-auto mb-3" alt="Instagram Logo">
+      <div class="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style="background: linear-gradient(135deg, #F58529 0%, #DD2A7B 50%, #8134AF 100%);">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="w-8 h-8 invert brightness-0" alt="Instagram Logo">
+      </div>
       <h3 class="text-lg font-semibold mb-2">Instagram</h3>
       <p class="text-gray-600 mb-3">@p_f_incanto_luxury</p>
       <a href="https://www.instagram.com/p_f_incanto_luxury" target="_blank" class="gold-bg text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
@@ -121,7 +137,9 @@
 
     <!-- TikTok -->
     <div class="bg-white rounded-2xl p-6 shadow-lg card-hover text-center">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" class="w-8 h-8 mx-auto mb-3" alt="TikTok Logo">
+      <div class="bg-black w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" class="w-8 h-8 invert" alt="TikTok Logo">
+      </div>
       <h3 class="text-lg font-semibold mb-2">TikTok</h3>
       <p class="text-gray-600 mb-3">@effeluxury2</p>
       <a href="https://www.tiktok.com/@effeluxury2" target="_blank" class="gold-bg text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90">
@@ -132,12 +150,18 @@
     <!-- Vinted -->
     <div class="space-y-4">
       <div class="bg-white rounded-2xl p-4 shadow-lg card-hover text-center">
+        <div class="vinted-gradient w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center" style="background: linear-gradient(135deg, #00BFA6 0%, #00A896 100%);">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/vinted.svg" class="w-6 h-6 invert brightness-0" alt="Vinted Logo">
+        </div>
         <h3 class="text-sm font-bold text-gray-800 mb-1">Vinted - fatypaky13</h3>
         <p class="text-xs text-gray-500 mb-3">Profilo principale</p>
         <a href="https://www.vinted.it/member/278612511-fatypaky13" target="_blank" class="gold-bg text-white px-4 py-1.5 rounded-lg text-xs font-semibold hover:opacity-90">Vai al Profilo</a>
       </div>
 
       <div class="bg-white rounded-2xl p-4 shadow-lg card-hover text-center">
+        <div class="vinted-gradient w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center" style="background: linear-gradient(135deg, #00BFA6 0%, #00A896 100%);">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/vinted.svg" class="w-6 h-6 invert brightness-0" alt="Vinted Logo">
+        </div>
         <h3 class="text-sm font-bold text-gray-800 mb-1">Vinted - pf146</h3>
         <p class="text-xs text-gray-500 mb-3">Profilo secondario</p>
         <a href="https://www.vinted.it/member/180808622-pf146" target="_blank" class="gold-bg text-white px-4 py-1.5 rounded-lg text-xs font-semibold hover:opacity-90">Vai al Profilo</a>
@@ -154,33 +178,70 @@
   </div>
 </section>
 
-<!-- 🔹 Chi siamo -->
-<section id="chi-siamo" class="py-16 text-center px-6 bg-white">
-  <h2 class="text-3xl font-serif gold mb-4">Chi Siamo</h2>
-  <p class="max-w-2xl mx-auto text-gray-700 leading-relaxed">
-    F.P. Incanto nasce dalla passione per la moda e per il lusso accessibile.  
-    Selezioniamo articoli unici, eleganti e di qualità per offrire un’esperienza d’acquisto raffinata.  
-    Ogni pezzo racconta una storia di stile e bellezza autentica.
-  </p>
+<!-- 🔹 Galleria -->
+<section id="galleria" class="py-16 bg-white">
+  <h2 class="text-center text-3xl font-serif gold mb-8">Le Nostre Proposte</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
+    <div class="image-card"><img src="imaggini/gucci flora.jpg" alt="Gucci Flora" class="w-full h-full object-cover"><div class="image-overlay"></div></div>
+    <div class="image-card"><img src="imaggini/bianco latte.jpg" alt="Bianco Latte" class="w-full h-full object-cover"><div class="image-overlay"></div></div>
+    <div class="image-card"><img src="imaggini/dior.jpg" alt="  Christian Dior" class="w-full h-full object-cover"><div class="image-overlay"></div></div>
+    <div class="image-card"><img src="imaggini/chanel.jpg" alt="Chanel" class="w-full h-full object-cover"><div class="image-overlay"></div></div>
+    <div class="image-card"><img src="imaggini/tom ford.jpg" alt="Tom Ford " class="w-full h-full object-cover"><div class="image-overlay"></div></div>
+    <div class="image-card"><img src="imaggini/savage elixir.jpg" alt="Sauvage  Dior Elixir" class="w-full h-full object-cover"><div class="image-overlay"></div></div>
+    <div class="image-card"><img src="imaggini/prada.jpg" alt="Prada" class="w-full h-full object-cover"><div class="image-overlay"></div></div>
+    <div class="image-card"><img src="imaggini/sauvage classico.jpg" alt="Sauvage Dior" class="w-full h-full object-cover"><div class="image-overlay"></div></div>
+  </div>
 </section>
 
-<!-- 🔹 Galleria -->
-<section id="galleria" class="py-16 bg-[#F7EED3]">
-  <h2 class="text-center text-3xl font-serif gold mb-8">Le Nostre Proposte</h2>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto px-4">
-    <div class="image-card">
-      <img src="imaggini/gucci flora.jpg" alt="Gucci Flora" class="w-full h-full object-cover">
-      <div class="image-overlay"></div>
+<!-- 🔹 Recensioni -->
+<section id="recensioni" class="py-16 bg-[#F7EED3]">
+  <h2 class="text-3xl font-serif text-center gold mb-8">Cosa dicono di noi</h2>
+  <div class="text-center mb-8">
+    <span class="stars">★★★★★</span>
+    <p class="text-sm text-gray-700">Valutazione media 5.0 su 5 basata su 120 recensioni</p>
+  </div>
+
+  <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6 px-4">
+    <div class="bg-white p-6 rounded-xl shadow-md">
+      <p class="italic text-gray-700">“Articoli impeccabili e profumo di eleganza in ogni dettaglio!”</p>
+      <p class="text-right mt-3 font-semibold gold">– Martina R.</p>
     </div>
-    <div class="image-card">
-      <img src="imaggini/bianco latte.jpg" alt="Bianco Latte" class="w-full h-full object-cover">
-      <div class="image-overlay"></div>
+    <div class="bg-white p-6 rounded-xl shadow-md">
+      <p class="italic text-gray-700">“Servizio veloce e cura del packaging, consigliatissimo!”</p>
+      <p class="text-right mt-3 font-semibold gold">– Laura P.</p>
     </div>
-    <div class="image-card">
-      <img src="imaggini/dior.jpg" alt="Dior" class="w-full h-full object-cover">
-      <div class="image-overlay"></div>
+    <div class="bg-white p-6 rounded-xl shadow-md">
+      <p class="italic text-gray-700">“Un’esperienza d’acquisto di vero lusso.”</p>
+      <p class="text-right mt-3 font-semibold gold">– Chiara M.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow-md">
+      <p class="italic text-gray-700">“Ottima comunicazione e articoli come descritti. Perfetto!”</p>
+      <p class="text-right mt-3 font-semibold gold">– Elisa F.</p>
+    </div>
+    <div class="bg-white p-6 rounded-xl shadow-md">
+      <p class="italic text-gray-700">“Spedizione rapidissima e pacco curato nei minimi dettagli.”</p>
+      <p class="text-right mt-3 font-semibold gold">– Giorgia T.</p>
     </div>
   </div>
+</section>
+
+<!-- 🔹 Newsletter -->
+<section class="py-16 text-center bg-[#E5D1A4]">
+  <h2 class="text-2xl font-serif mb-4 gold">Rimani aggiornata sulle novità</h2>
+  <p class="text-gray-700 mb-6">Ricevi in anteprima nuovi arrivi, promozioni e ispirazioni di stile.</p>
+  <form action="https://formspree.io/f/mvgpkgrg" method="POST" class="max-w-md mx-auto flex">
+    <input type="email" name="email" placeholder="Inserisci la tua email" class="flex-1 p-3 rounded-l-lg border-0 focus:ring-2 focus:ring-[#C5A253]" required>
+    <button type="submit" class="gold-bg text-white px-6 rounded-r-lg font-semibold hover:opacity-90">Iscriviti</button>
+  </form>
+</section>
+
+<!-- 🔹 Contatti -->
+<section id="contatti" class="py-16 bg-white text-center">
+  <h2 class="text-3xl font-serif gold mb-4">Contattaci</h2>
+  <p class="text-gray-700 mb-6">Hai una domanda o vuoi collaborare con noi?</p>
+  <a href="https://wa.me/393406434370" target="_blank" class="gold-bg text-white px-6 py-3 rounded-lg hover:opacity-90">
+    Scrivici su WhatsApp
+  </a>
 </section>
 
 <!-- 🔹 Footer -->
@@ -188,5 +249,41 @@
   © 2025 <span class="gold">F.P. Incanto Luxury</span> — Tutti i diritti riservati
 </footer>
 
+<!-- 🔹 Bottone "Torna su" -->
+<button id="toTopBtn">↑</button>
+
+<script>
+  // Effetto digitazione più lento
+  const text = ["Eleganza.", "Stile.", "Lusso accessibile."];
+  let i = 0, j = 0, current = "", isDeleting = false;
+
+  function type() {
+    current = text[i];
+    document.getElementById("typed-text").textContent =
+      current.substring(0, j) + (isDeleting ? "" : "|");
+
+    if (!isDeleting && j++ === current.length) {
+      isDeleting = true;
+      setTimeout(type, 1500); // pausa più lunga
+    } else if (isDeleting && j-- === 0) {
+      isDeleting = false;
+      i = (i + 1) % text.length;
+    }
+    setTimeout(type, isDeleting ? 120 : 160);
+  }
+  type();
+
+  // Bottone "Torna su"
+  const toTopBtn = document.getElementById("toTopBtn");
+  window.onscroll = () => {
+    if (document.documentElement.scrollTop > 300) {
+      toTopBtn.style.display = "block";
+    } else {
+      toTopBtn.style.display = "none";
+    }
+  };
+</script>
+
 </body>
 </html>
+
